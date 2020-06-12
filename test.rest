@@ -1,5 +1,34 @@
-GET http://localhost:3000/
-
-###
 
 GET http://localhost:3000/api/proyectos
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiTWFyY29zIiwiY3JlYXRlZEF0IjoxNTkxOTg4OTY2LCJleHBpcmVBdCI6MTU5MTk4OTI2Nn0.gQMQ2ZE_FK6Q6Gqc2i9psHK5vnKSe90qt9IS3wlK73s
+
+###
+POST http://localhost:3000/api/proyectos
+Content-Type: application/json
+
+{
+  "titulo": "Proyecto de prueba",
+  "descripcion": "Esta es la descripcion",
+  "url": "http://www.google.es",
+  "cliente": "Google",
+  "urlCliente": "http://www.google.com/quien-somos"
+}
+
+###
+PUT http://localhost:3000/api/proyectos/5ec173ea4a335805d4b49966
+Content-Type: application/json
+
+{
+  "titulo": "Proyecto EDITADO V5",
+  "descripcion": "Esta es la descripcion",
+  "url": "http://www.google.es",
+  "cliente": "Google",
+  "urlCliente": "http://www.google.com/quien-somos"
+}
+
+###
+DELETE http://localhost:3000/api/proyectos/5ec170704d6f5a7f5be8b5e0
+
+### TEST API TOKEN
+
+GET http://localhost:3000/api/token
