@@ -29,6 +29,10 @@ Content-Type: application/json
 ###
 DELETE http://localhost:3000/api/proyectos/5ec170704d6f5a7f5be8b5e0
 
-### TEST API TOKEN
+### TEST CREATE TOKEN API
 
 GET http://localhost:3000/api/token
+
+### PRODUCCIÓN
+
+GET https://cv-back-marcos.herokuapp.com/api/token
