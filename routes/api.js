@@ -11,7 +11,7 @@ router.get('/token', (req, res) => {
   let payload = {
       usuario: 'Marcos',
       createdAt: moment().unix(),
-      expireAt: moment().add(5, 'minutes').unix()
+      expireAt: moment().add(7, 'days').unix()
   };
   const token = jwt.encode(payload, process.env.SECRET_KEY)
   console.log(token)
