@@ -1,29 +1,37 @@
 
 GET http://localhost:3000/api/proyectos
-access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiTWFyY29zIiwiY3JlYXRlZEF0IjoxNTkxOTg4OTY2LCJleHBpcmVBdCI6MTU5MTk4OTI2Nn0.gQMQ2ZE_FK6Q6Gqc2i9psHK5vnKSe90qt9IS3wlK73s
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiTWFyY29zIiwiY3JlYXRlZEF0IjoxNTkyMTU5MjAyLCJleHBpcmVBdCI6MTU5MjE1OTUwMn0.reeMvzvYJt7muf0ZHyqGV_0zhBXl5h9tY0rsnHeF1Qg
+
+###
+GET http://localhost:3000/api/proyectos/wordpress
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiTWFyY29zIiwiY3JlYXRlZEF0IjoxNTkyMTU5MjAyLCJleHBpcmVBdCI6MTU5MjE1OTUwMn0.reeMvzvYJt7muf0ZHyqGV_0zhBXl5h9tY0rsnHeF1Qg
 
 ###
 POST http://localhost:3000/api/proyectos
 Content-Type: application/json
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiTWFyY29zIiwiY3JlYXRlZEF0IjoxNTkxOTkyODYwLCJleHBpcmVBdCI6MTU5MTk5MzE2MH0.e5-7jSpIv07EGQnieExalL4LFFG9yIkWSb061np5gRI
 
 {
   "titulo": "Proyecto de prueba",
   "descripcion": "Esta es la descripcion",
   "url": "http://www.google.es",
   "cliente": "Google",
-  "urlCliente": "http://www.google.com/quien-somos"
+  "urlCliente": "http://www.google.com/quien-somos",
+  "categoria": "wordpress"
 }
 
 ###
 PUT http://localhost:3000/api/proyectos/5ec173ea4a335805d4b49966
 Content-Type: application/json
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiTWFyY29zIiwiY3JlYXRlZEF0IjoxNTkyMTU5MjAyLCJleHBpcmVBdCI6MTU5MjE1OTUwMn0.reeMvzvYJt7muf0ZHyqGV_0zhBXl5h9tY0rsnHeF1Qg
 
 {
-  "titulo": "Proyecto EDITADO V5",
-  "descripcion": "Esta es la descripcion",
+  "titulo": "Proyecto V8",
+  "descripcion": "Creacion live coding",
   "url": "http://www.google.es",
-  "cliente": "Google",
-  "urlCliente": "http://www.google.com/quien-somos"
+  "cliente": "Alberto",
+  "urlCliente": "http://www.google.com/who-i-am",
+  "categoria": "wordpress"
 }
 
 ###
@@ -35,4 +43,8 @@ GET http://localhost:3000/api/token
 
 ### PRODUCCIÓN
 
+GET https://cv-back-marcos.herokuapp.com/api/proyectos
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiTWFyY29zIiwiY3JlYXRlZEF0IjoxNTkxOTkyMTgyLCJleHBpcmVBdCI6MTU5MTk5MjQ4Mn0.wMjKn7pDcQ_PB28FnJK4em3vN_zCYvMjKAw0febIPlA
+
+###
 GET https://cv-back-marcos.herokuapp.com/api/token
