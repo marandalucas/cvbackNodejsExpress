@@ -14,12 +14,23 @@ router.get('/', async (req, res) => {
     }
 });
 
+router.get('/:categoria', async (req, res) => {
+    try {
+        const proyectos = await Proyecto.find({ categoria: req.params.categoria })
+        res.json(proyectos); 
+    } catch (err) {
+        res.status(503).json({ 'error': err });
+    }
+});
+
 router.post('/', [
     check('titulo', 'El titulo debe incluirse en la peticion y tiene un máximo de 40 caracteres')
         .exists()
+        .notEmpty()
         .isLength({ max: 40 }),
     check('descripcion', 'El descripcion debe incluirse en la peticion y tiene un máximo de 300 caracteres')
         .exists()
+        .notEmpty()
         .isLength({ max: 300 }),
     check('url', 'La url del proyecto debe estar correcta')
         .isURL()
