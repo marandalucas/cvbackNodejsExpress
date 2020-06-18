@@ -19,3 +19,15 @@ $ npm install
 ```bash
 $ npm run startdev
 ```
+
+## How to Deploy in Her
+
+- Deploy
+```bash
+$ git push heroku master
+```
+
+- View Logs
+```bash
+$ heroku logs --tail
+```
