@@ -3,21 +3,26 @@ GET http://localhost:3000/api/proyectos
 access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiTWFyY29zIiwiY3JlYXRlZEF0IjoxNTkyMTU5MjAyLCJleHBpcmVBdCI6MTU5MjE1OTUwMn0.reeMvzvYJt7muf0ZHyqGV_0zhBXl5h9tY0rsnHeF1Qg
 
 ###
-GET http://localhost:3000/api/proyectos/wordpress
+GET http://localhost:3000/api/proyectos/5ee67558c6ef65656be1b110
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiTWFyY29zIiwiY3JlYXRlZEF0IjoxNTkyMTU5MjAyLCJleHBpcmVBdCI6MTU5MjE1OTUwMn0.reeMvzvYJt7muf0ZHyqGV_0zhBXl5h9tY0rsnHeF1Qg
+
+###
+
+GET http://localhost:3000/api/proyectos/categoria/wordpress
 access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiTWFyY29zIiwiY3JlYXRlZEF0IjoxNTkyMTU5MjAyLCJleHBpcmVBdCI6MTU5MjE1OTUwMn0.reeMvzvYJt7muf0ZHyqGV_0zhBXl5h9tY0rsnHeF1Qg
 
 ###
 POST http://localhost:3000/api/proyectos
 Content-Type: application/json
-access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiTWFyY29zIiwiY3JlYXRlZEF0IjoxNTkxOTkyODYwLCJleHBpcmVBdCI6MTU5MTk5MzE2MH0.e5-7jSpIv07EGQnieExalL4LFFG9yIkWSb061np5gRI
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiTWFyY29zIiwiY3JlYXRlZEF0IjoxNTkyMTU5MjAyLCJleHBpcmVBdCI6MTU5MjE1OTUwMn0.reeMvzvYJt7muf0ZHyqGV_0zhBXl5h9tY0rsnHeF1Qg
 
 {
-  "titulo": "Proyecto de prueba",
-  "descripcion": "Esta es la descripcion",
-  "url": "http://www.google.es",
-  "cliente": "Google",
-  "urlCliente": "http://www.google.com/quien-somos",
-  "categoria": "wordpress"
+  "titulo": "Proyecto3",
+  "descripcion": "Descripcion proyecto 3",
+  "url": "http://www.proyecto3.es",
+  "cliente": "Cliente3",
+  "urlCliente": "http://www.cliente3.com/who-i-am",
+  "categoria": "angular"
 }
 
 ###
@@ -31,7 +36,7 @@ access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiTWFyY29zIiwiY
   "url": "http://www.google.es",
   "cliente": "Alberto",
   "urlCliente": "http://www.google.com/who-i-am",
-  "categoria": "wordpress"
+  "categoria": "angular"
 }
 
 ###
